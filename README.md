@@ -39,3 +39,18 @@ cd agentic-ai-system
 pip install fastapi uvicorn python-dotenv langchain-groq langgraph \
             langchain-huggingface langchain-community pypdf faiss-cpu \
             requests duckduckgo-search
+agentic_ai/
+├── app/
+│   ├── __init__.py
+│   ├── main.py          # FastAPI Server & Routes
+│   ├── agents.py        # LangGraph Orchestrator
+│   ├── tools.py         # Weather, Search, & SQL Tools
+│   ├── database.py      # SQLite Configuration
+│   └── vector_store.py  # FAISS & Embedding Logic
+├── .env                 # API Keys (Create this manually)
+└── README.md            # Documentation
+
+### 🏁 Final Step for You
+1.  Create the `.env` file in the root folder.
+2.  Add your keys.
+3.  Run `python -m app.main`.
