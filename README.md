@@ -24,8 +24,4 @@ After starting the server locally, open the Swagger UI here:
 
 ---
 
-## ▶️ How to Run Locally (Windows)
 
-### 1️⃣ Create Virtual Environment
-```bash
-python -m venv ai_agent_env
