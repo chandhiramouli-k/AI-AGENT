@@ -1,4 +1,4 @@
-# AI Agent (FastAPI + RAG)
+# AI Agent 
 
 This project is an **AI Agent system** built using **FastAPI**, **LLaMA Index**, and **LangChain**.  
 It supports **Retrieval-Augmented Generation (RAG)** and exposes APIs with interactive Swagger documentation.
