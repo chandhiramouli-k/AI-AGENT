@@ -1,27 +1,41 @@
-# AI Agent 
+# 🤖 Multi-Agent AI System (LangGraph + FastAPI)
 
-This project is an **AI Agent system** built using **FastAPI**, **LLaMA Index**, and **LangChain**.  
-It supports **Retrieval-Augmented Generation (RAG)** and exposes APIs with interactive Swagger documentation.
-
----
-
-## 🚀 API Documentation (Swagger UI)
-
-After starting the server locally, open the Swagger UI here:
-
-👉 **http://127.0.0.1:8000/docs**
+An advanced agentic AI framework that uses a **Multi-Agent Orchestrator** to handle real-world tasks. The system utilizes **Llama 3.3** for reasoning, **FAISS** for document memory, and integrates with live APIs and SQL databases.
 
 ---
 
-## 📂 Project Features
+## 🌟 The 4 Specialized Agents
 
-- FastAPI-based backend
-- AI Agent routing system
-- RAG (Retrieval-Augmented Generation)
-- LLaMA Index integration
-- LangChain support
-- Interactive Swagger API documentation
+1.  **Weather Agent**: Dynamically extracts city names to fetch live weather data via OpenWeather API.
+2.  **Resume/Knowledge Agent (RAG)**: Uses a Vector Store to answer questions from uploaded PDFs/TXT files; falls back to Web Search if information is missing.
+3.  **Smart Scheduler**: A reasoning agent that checks weather conditions before allowing a meeting to be booked in the database.
+4.  **Database Agent**: A SQL-linked agent that retrieves and displays all stored records from the local SQLite database.
 
 ---
 
 
+
+---
+
+## 🛠️ Tech Stack
+
+* **Logic**: LangGraph & LangChain
+* **Brain**: Llama-3.3-70b-versatile (Groq)
+* **API**: FastAPI
+* **Vector DB**: FAISS (with HuggingFace Embeddings)
+* **Database**: SQLite
+* **Search**: DuckDuckGo
+
+---
+
+## 🚀 Installation & Setup
+
+### 1. Clone & Install Dependencies
+Open your terminal and run:
+```bash
+git clone [https://github.com/your-username/agentic-ai-system.git](https://github.com/your-username/agentic-ai-system.git)
+cd agentic-ai-system
+
+pip install fastapi uvicorn python-dotenv langchain-groq langgraph \
+            langchain-huggingface langchain-community pypdf faiss-cpu \
+            requests duckduckgo-search
